@@ -1,0 +1,67 @@
+body{
+    background:rgb(201, 229, 241);
+    animation-name: animation;
+    animation-duration: 3s;
+
+}
+img{
+    height: 100px;
+    width: 200px;
+    align-self: center;
+    transition: 0.5s all;
+}
+img:hover{
+    height:150px;
+    width:300px;
+    
+}
+a{
+    color: rgb(125, 191, 211);
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: rgb(83, 157, 182);
+}
+
+
+
+#title{
+    font-family: "Mouse Memoirs", sans-serif;
+    font-size: large;
+}
+.subtitle{
+    font-family: "Mouse Memoirs", sans-serif;
+}
+.topic-subtitle{
+    font-family: "Mouse Memoirs", sans-serif;
+}
+.post-title{
+    font-family:"Mouse Memoirs", sans-serif;
+}
+#main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 100px;
+}
+.post{
+    border: 2px solid ;
+    padding: 10px;;
+    margin:5px;
+    background: rgb(250, 206, 119);
+}
+.image-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.image-grid > img{
+    margin: 5px;
+}
+
+@keyframes animation{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
